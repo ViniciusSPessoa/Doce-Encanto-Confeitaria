@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.3.1/css/all.min.css"
+        integrity="sha512-QeR2VH+lsBE5LSAe1Q5EnTBbe7XTBubt8dG93Y7gidSgdMCr8nVqKcfKAMyN96SV8KDbZVTDXChatu5G2KQGzg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap"
+        rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Be+Vietnam+Pro:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+        rel="stylesheet">
+    <title>Doce Encanto</title>
+</head>
+
+<body>
+    <header>
+        <h1>Doce Encanto</h1>
+        <nav>
+            <a href="#menu">Nossas delícias</a>
+            <a href="#sobre">Nossa essência</a>
+            <a href="#contato">Encomendas</a>
+
+        </nav>
+
+        <a class="carrinho">
+            <i class="fa-solid fa-cart-shopping"></i>
+            <p><span id="contador-carrinho">0</span></p>
+        </a>
+    </header>
+
+    <main class="container">
+        <Section class="descricao">
+
+            <div class="text">
+                <p>Artesanal & Exclusivo</p>
+                <h2>A Arte de Adoçar Momentos Especiais</h2>
+                <p>Descubra agora a delicadeza e o sabor incomparável da nossa patisserie artesanal. Ingredientes
+                    selecionados para criar memórias inesquecíveis</p>
+
+            </div>
+
+            <div class="banner">
+                <img src="./image/Bolo-de-casamento-branco-dois-andares.jpg" alt="">
+            </div>
+
+        </Section>
+
+        <section id="menu" class="menu">
+
+            <div class="text-btn">
+                <div class="text-menu">
+                    <h2>Nossas Delícias</h2>
+                    <p>Cada criação é uma obra de arte desenhada para proporcionar uma explosão de alegria e sabor</p>
+                </div>
+
+                <div class="btn-opcao">
+                    <button onclick="mostrarTodos()" class="todos">Todos</button>
+                    <button onclick="mostrarBolos()" class="bolos">Bolos</button>
+                    <button onclick="mostrarTortas()" class="tortas">Tortas</button>
+                    <button  onclick="mostrarDoces()"class="doces">Doces</button>
+                </div>
+            </div>
+
+            <div class="box-item">
+                <div class="box bolo">
+                    <img src="./image/bolo-1.jpg" alt="">
+                    <h3>Bolo De Chocolate Confeitado</h3>
+                    <p class="preco">R$ 30,00</p>
+                    <button onclick="addCarrinho()">Adicionar</button>
+                </div>
+
+                <div class="box brigadeiro">
+                    <img src="./image/brigadeiros.jpg" alt="">
+                    <h3>Brigadeiro</h3>
+                    <p class="preco">R$ 20,00</p>
+                    <button onclick="addCarrinho()">Adicionar</button>
+                </div>
+
+                <div class="box torta">
+                    <img src="./image/torta-1.jpg" alt="">
+                    <h3>Torta</h3>
+                    <p class="preco">R$ 30,00</p>
+                    <button onclick="addCarrinho()">Adicionar</button>
+                </div>
+
+                <div class="box bolo">
+                    <img src="./image/bolo-2.jpg" alt="">
+                    <h3>Bolo De Chocolate</h3>
+                    <p class="preco">R$ 50,00</p>
+                    <button onclick="addCarrinho()">Adicionar</button>
+                </div>
+
+                <div class="box brigadeiro">
+                    <img src="./image/doces-goumet.JPG" alt="">
+                    <h3>Brigadeiro</h3>
+                    <p class="preco">R$ 25,00</p>
+                    <button onclick="addCarrinho()">Adicionar</button>
+                </div>
+
+                <div class="box torta">
+                    <img src="./image/torta-2.jpg" alt="">
+                    <h3>Torta</h3>
+                    <p class="preco">R$ 60,00</p>
+                    <button onclick="addCarrinho()">Adicionar</button>
+                </div>
+            </div>
+
+        </section>
+
+        <section id="sobre" class="sobre">
+
+            <div class="sobre-imagens">
+                <div class="img-ingredientes">
+                    <img src="https://lh3.googleusercontent.com/aida-public/AB6AXuDXYaRQ5a-I-n9jn8Y5rCvF80lpN_c1O0m3KkYHPPDcNZIeD-pcpGQNcjldJMWX-zn2vGdi9r2lAKJnv8VGGuZ7C1W0Rzgp_74T2V6ETpGcv7l7fJtz9q8Q1OvQd8YpndiTI7UI8eFksjQeDEOmsquuUZWDB1JOVZ-03x-dhGRtiv6B2bvX4v8uBB_rNIOW0HyFyrmdtFSS8Zzkph1achmCdQX13Ffy-2LwgLeDNpPdePzpYpV5mMP2Yw"
+                        alt="ingredientes">
+                </div>
+
+                <div class="img-confeiteira">
+                    <img src="https://lh3.googleusercontent.com/aida-public/AB6AXuBE6XVEUYQ-cWZtsK-b5AfRH2JJqMiKhjTZgn1APh1J48kgfW6TGCmnIw1JH8vR8lOrDueVZTNib4zai9dEEhrAj2A1GnalaSsfY1VHSMtbc0RDyZKAienY25mevG8DvmhGf-9pBP5X4gXSeMuM72qJ7mpDS9aMUSJDm2dUGSaqPyC8qJVH4K-tqwwL3rdNmMOMLPpAowlChSawSJGqO3xTTqSIM4_8AnB2qB6gGsVfmaNzmUVm43uxWA"
+                        alt="confeiteira">
+                </div>
+            </div>
+
+            <div class="sobre-descricao">
+                <h1>Nossa Essência</h1>
+                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Delectus enim molestias odio illo
+                    repellendus
+                    provident minima sunt aperiam natus nisi eius commodi aliquid praesentium debitis necessitatibus
+                    ea
+                    saepe, accusamus quia?</p>
+                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Dolor maiores, blanditiis delectus
+                    nihil
+                    doloribus culpa in? Aliquam rem minima atque hic aspernatur! Temporibus quisquam cum doloremque
+                    veritatis fuga veniam animi?</p>
+
+                <p><i class="fa-solid fa-star"></i> Ingredientes 100% Naturais</p>
+                <p><i class="fa-solid fa-heart"></i> Feito à mão diariamente</p>
+                <p><i class="fa-solid fa-spa"></i> Qualidade é nosso foco</p>
+            </div>
+        </section>
+
+        <section id="contato" class="encomendas-especiais">
+            <div class="informacoes">
+                <div class="localizacao">
+                    <h1>Encomendas Especiais</h1>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nesciunt, velit quisquam! Vero impedit
+                        molestias eius excepturi nemo eveniet, fuga cum atque, laborum corporis veritatis dolores
+                        adipisci
+                        architecto illum tempore laboriosam.</p>
+
+                    <i></i>
+                    <p><strong>Ateliê</strong><br>Rua das Flores, 123 - Oriximiná, PA</p>
+                    <i></i>
+                    <p><strong>Horário de Funcionamento</strong><br>Segunda a Sábado: 08:00h às 17:00h</p>
+                </div>
+
+                <div class="dados">
+                    <p>Nome Completo</p>
+                    <input type="text" class="nome" placeholder="Seu nome">
+                    <div class="endereco-telefone">
+                        <p>Seu Endereço</p>
+                        <p>Telefone / Whatsapp</p>
+                    </div>
+                    <div class="endereco-telefone">
+                        <input type="text" id="endereco" placeholder="Endereço">
+                        <input type="tel" id="telefone" placeholder="(00) 00000-0000">
+                    </div>
+                    <p>Detalhes da Encomenda</p>
+                    <textarea name="descricao" id="descricao"
+                        placeholder="Conte-nos um pouco sobre a sua ideia"></textarea>
+
+                    <button id="mensagem">Enviar Mensagem</button>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <h2>Doce Encanto</h2>
+
+        <i></i>
+        <a href="#">Instagram</a>
+        <i></i>
+        <a href="#">Whatsapp</a>
+        <i></i>
+        <a href="#">Facebook</a>
+    </footer>
+
+    <script src="./script.js"></script>
+</body>
+
+</html>
